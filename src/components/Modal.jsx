@@ -7,7 +7,8 @@ const Modal = ({
     animarModal,
     setAnimarModal, 
     guardarGasto, 
-    gastosEditar
+    gastosEditar,
+    setGastosEditar
 }) => {
 
     const [mensaje, setMensaje] = useState('')
@@ -31,6 +32,7 @@ const Modal = ({
 
     const ocultarModal = () => {
         setAnimarModal(false);
+        setGastosEditar({});
 
         setTimeout(() => {
             setModal(false);
